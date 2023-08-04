@@ -1,0 +1,42 @@
+@import 'variables.scss';
+.main__skills_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 112px;
+}
+.skills {
+  margin-top: 45px;
+  flex-basis: 60%;
+  display: grid;
+  grid-template:
+    '. . c' 1fr
+    'a b c' 1fr
+    'a b d' 1fr
+    '. . d' 1fr;
+  gap: 16px;
+  .skills__item {
+    border: 1px solid $gray;
+  }
+  .skills__languages {
+    grid-area: a;
+  }
+  .skills__other {
+    grid-area: b;
+  }
+  .skills__tools {
+    grid-area: c;
+  }
+  .skills__frameworks {
+    grid-area: d;
+  }
+  .skills__name {
+    border-bottom: 1px solid $gray;
+    padding: 8px;
+    @include font(16px, $semi, $white);
+  }
+  .skills__list {
+    padding: 8px;
+    @include font(16px, $reg, $gray);
+  }
+}

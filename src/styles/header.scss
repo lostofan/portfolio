@@ -1,0 +1,30 @@
+@import 'variables.scss';
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 32px;
+  margin-bottom: 62px;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  .nav__item {
+    @include font(16pt, $medium, $gray);
+  }
+}
+
+a {
+  text-decoration: none;
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $white;
+  }
+  &:hover {
+    color: $gray;
+  }
+}

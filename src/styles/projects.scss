@@ -1,0 +1,25 @@
+@import 'variables.scss';
+
+.projects {
+  margin-bottom: 100px;
+  .projects__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .heading__all-btn {
+      background-color: $maincolor;
+      border: none;
+      @include font(16px, $medium, $white);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .projects__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 48px;
+  }
+}

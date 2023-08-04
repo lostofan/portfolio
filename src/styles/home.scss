@@ -1,0 +1,50 @@
+@import 'variables.scss';
+
+.home {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  .home__text {
+    width: 50%;
+    .home__heading {
+      @include font(32px, $semi, $white);
+      margin-bottom: 32px;
+      .text__highlight {
+        color: $secondary;
+      }
+    }
+    .home__article {
+      color: $gray;
+      margin-bottom: 24px;
+    }
+  }
+  .current {
+    border: 1px solid $gray;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    @include font(16px, $medium, $gray);
+    .current__ico {
+      background-color: $secondary;
+      width: 16px;
+      height: 16px;
+      margin: auto 10px;
+    }
+    .current__highlight {
+      @include font(16px, $semi, $white);
+    }
+  }
+  .home__logo {
+    position: absolute;
+    top: 15%;
+    z-index: -1;
+  }
+  .home__dots {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    z-index: 3;
+  }
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
+
+//Палитра цветов
+$maincolor: #000000;
+$secondary: #a7d129;
+$white: #ffffff;
+$gray: #abb2bf;
+
+//Семейство шрифта
+$ff: 'Fira Code', monospace;
+
+//Тип шрифта
+$reg: 400;
+$medium: 500;
+$semi: 600;
+$bold: 700;
+
+//Настройка шрифта
+@mixin font($fs, $fw, $col) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $col;
+}

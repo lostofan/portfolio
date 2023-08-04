@@ -1,0 +1,16 @@
+@import 'variables.scss';
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 145px;
+  .contacts__links {
+    border: 1px solid $gray;
+    width: 240px;
+    padding: 16px;
+    .contacts__heading {
+      @include font(16px, $semi, $white);
+    }
+  }
+}
