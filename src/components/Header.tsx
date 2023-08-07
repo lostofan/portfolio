@@ -5,7 +5,7 @@ export const Header = () => {
     <header>
       <div className="header__wrapper">
         <div className="header__logo">
-          <img src="#" alt="" /> Pronin
+          <img src={require('../imgs/logo2.png')} alt="" /> Pronin
         </div>
         <nav className="header__nav nav">
           <ul className="nav__list">

@@ -5,7 +5,10 @@
   flex-direction: row;
   position: relative;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 80px;
+  position: relative;
+  height: 80vh;
   .home__text {
     width: 50%;
     .home__heading {
@@ -21,6 +24,9 @@
     }
   }
   .current {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
     border: 1px solid $gray;
     display: flex;
     flex-direction: row;
@@ -38,13 +44,9 @@
   }
   .home__logo {
     position: absolute;
+    right: 10%;
     top: 15%;
     z-index: -1;
-  }
-  .home__dots {
-    position: absolute;
-    top: 60%;
-    right: 0;
-    z-index: 3;
+    width: 300px;
   }
 }

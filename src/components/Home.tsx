@@ -15,7 +15,7 @@ export const Home = () => {
         <button className="home__contact-button primary-btn">Contact me</button>
       </div>
       <div className="home__image">
-        <img className="home__logo" src={require('../imgs/Logo.png')} alt="" />
+        <img className="home__logo" src={require('../imgs/logo.png')} alt="" />
         <img className="home__dots" src={require('../imgs/Dots.png')} alt="" />
         <img src="" alt="" />
         <div className="home__current-work current">

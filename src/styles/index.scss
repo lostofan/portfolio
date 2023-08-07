@@ -1,11 +1,13 @@
 @import 'reset.scss';
 @import 'variables.scss';
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: $maincolor;
   font-family: $ff;
   color: white;
-  header,
+  scroll-behavior: smooth;
   main,
   footer {
     max-width: 1024px;
@@ -19,6 +21,12 @@ body {
   background-color: $gray;
 }
 
+.dots {
+  position: absolute;
+  top: 40%;
+  z-index: 0;
+}
+
 /*===   Переиспользуемые элементы   ===*/
 //Дизайн кнопок
 .primary-btn {
@@ -29,9 +37,15 @@ body {
   padding: 8px 16px;
   font-size: 16px;
   font-weight: $medium;
+  a {
+    color: $white;
+  }
   &:hover {
     background-color: $secondary;
   }
+}
+a {
+  color: $white;
 }
 .secondary-btn {
   background-color: $maincolor;
@@ -41,6 +55,7 @@ body {
   padding: 8px 16px;
   font-size: 16px;
   font-weight: $medium;
+
   &:hover {
     background-color: $gray;
   }
