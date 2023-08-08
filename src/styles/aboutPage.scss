@@ -1,0 +1,16 @@
+@import 'variables.scss';
+
+.about__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  .heading__link {
+    background-color: $maincolor;
+    border: none;
+    @include font(16px, $medium, $white);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

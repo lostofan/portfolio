@@ -1,15 +1,21 @@
 import React from 'react';
 import '../styles/about.scss';
+import { Link } from 'react-router-dom';
+import { HeadingDivider } from './HeadingDivider';
 
-export const About = () => {
+interface AboutProps {
+  isPage: boolean;
+}
+
+export const About: React.FC<AboutProps> = ({ isPage }) => {
   return (
     <div className="main__about about" id="about-me">
-      <div className="about__heading headings">
-        <h1 className="heading">
-          <span className="tag">#</span>about-me
-        </h1>
-        <div className="line"></div>
-      </div>
+      {isPage ? (
+        <HeadingDivider name="about" isLink={false} isTag={false} isLine={true} isBack={true} />
+      ) : (
+        <HeadingDivider name="about" isLink={false} isTag={true} isLine={true} isBack={false} />
+      )}
+
       <div className="about__wrapper">
         <div className="about__text">
           <p className="about__article">
@@ -26,7 +32,13 @@ export const About = () => {
             placeat alias quibusdam! Laborum voluptatum quaerat quam consequuntur quasi. Nobis
             similique consectetur facere neque nam eos, qui consequatur!
           </p>
-          <button className="about__btn primary-btn">Read more -&gt;</button>
+          {isPage ? (
+            false
+          ) : (
+            <Link to="/about" className="about__btn primary-btn">
+              Read more -&gt;
+            </Link>
+          )}
         </div>
         <div className="about__image">
           <img src="" alt="" />

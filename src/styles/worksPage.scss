@@ -1,0 +1,10 @@
+@import 'variables.scss';
+
+.projects__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 48px;
+  margin-bottom: 100px;
+}

@@ -1,20 +1,23 @@
 import React from 'react';
 import './App.css';
-import { Header } from './components/Header';
-import { Main } from './components/Main';
+import { MainPage } from './pages/main/MainPage';
 import { Footer } from './components/Footer';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Dots } from './components/Dots';
+import { Route, Routes } from 'react-router-dom';
+import { AboutPage } from './pages/about/AboutPage';
+import { WorksPage } from './pages/works/WorksPage';
 AOS.init();
 
 function App() {
   return (
     <div className="App">
-      <Dots />
-      <Header></Header>
-      <Main></Main>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/works" element={<WorksPage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
       <div className="border-line"></div>
       <Footer />
     </div>

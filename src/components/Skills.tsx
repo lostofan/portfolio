@@ -1,15 +1,18 @@
 import React from 'react';
 import '../styles/skills.scss';
+import { HeadingDivider } from './HeadingDivider';
 
-export const Skills = () => {
+interface SkillsProps {
+  isPage: boolean;
+}
+export const Skills: React.FC<SkillsProps> = ({ isPage }) => {
   return (
     <div className="main__skills-block">
-      <div className="headings">
-        <h1 className="heading">
-          <span className="tag">#</span>skills
-        </h1>
-        <div className="line"></div>
-      </div>
+      {isPage ? (
+        <HeadingDivider name="skills" isTag={true} isLink={false} isLine={false} isBack={false} />
+      ) : (
+        <HeadingDivider name="skills" isTag={true} isLink={false} isLine={true} isBack={false} />
+      )}
       <div className="main__skills_wrapper">
         <div className="main__skills skills">
           <div className="skills__item skills__languages" data-aos="fade-left">

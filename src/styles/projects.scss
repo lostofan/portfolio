@@ -8,7 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    .heading__all-btn {
+    .heading__link {
       background-color: $maincolor;
       border: none;
       @include font(16px, $medium, $white);
@@ -20,6 +20,7 @@
   .projects__wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 16px;
     margin-top: 48px;
   }
