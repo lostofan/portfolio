@@ -1,5 +1,18 @@
-img {
+@import 'variables.scss';
+
+.current__ico {
   animation-duration: 1s;
   animation-name: blink;
   animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  from {
+    background-color: $secondary;
+    border-color: $gray;
+  }
+  to {
+    background-color: $gray;
+    border-color: $secondary;
+  }
 }

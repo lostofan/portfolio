@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../styles/home.scss';
+import '../styles/animations.scss';
 
 export const Home = () => {
   return (
@@ -12,7 +13,11 @@ export const Home = () => {
         <div className="home__article">
           He crafts responsive websites where technologies meet creativity
         </div>
-        <button className="home__contact-button primary-btn">Contact me</button>
+        <button className="home__contact-button primary-btn">
+          <a href="mailto:kolog007@gmail.com" className="home__mailLink">
+            Contact me
+          </a>
+        </button>
       </div>
       <div className="home__image">
         <img className="home__logo" src={require('../imgs/logo.png')} alt="" />
