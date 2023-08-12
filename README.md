@@ -1,4 +1,4 @@
 # TODO
-Goto Next.js
-Adaptive design
-Try webpack already
+* Goto Next.js
+* Adaptive design
+* Try webpack already
