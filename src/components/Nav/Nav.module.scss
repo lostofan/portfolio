@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.item {
+  @include font(16pt, $medium, $gray);
+}
+
+.link {
+  text-decoration: none;
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $white;
+  }
+  &:hover {
+    color: $gray;
+  }
+}

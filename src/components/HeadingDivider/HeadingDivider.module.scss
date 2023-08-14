@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+.view,
+.back {
+  position: absolute;
+  right: 0;
+}

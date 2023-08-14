@@ -1,0 +1,38 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  padding-top: 64px;
+  margin-top: 45px;
+  flex-basis: 60%;
+  display: grid;
+  grid-template:
+    '. . c' 1fr
+    'a b c' 1fr
+    'a b d' 1fr
+    '. . d' 1fr;
+  gap: 16px;
+}
+.item {
+  border: 1px solid $gray;
+}
+.languages {
+  grid-area: a;
+}
+.other {
+  grid-area: b;
+}
+.tools {
+  grid-area: c;
+}
+.frameworks {
+  grid-area: d;
+}
+.title {
+  border-bottom: 1px solid $gray;
+  padding: 8px;
+  @include font(16px, $semi, $white);
+}
+.name {
+  padding: 8px;
+  @include font(16px, $reg, $gray);
+}
