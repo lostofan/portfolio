@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { Home } from '../../components/Home';
-import { Projects } from '../../components/Projects';
-import { Skills } from '../../components/Skills';
-import { About } from '../../components/About';
-import { Contacts } from '../../components/Contacts';
-import { Header } from '../../components/Header';
+import { Home } from '../../components/Greeting/Greeting';
+import { Projects } from '../../components/Projects/Projects';
+import { Skills } from '../../components/Skills/Skills';
+import { About } from '../../components/About/About';
+import { Contacts } from '../../components/Contacts/Contacts';
+import { Header } from '../../components/Header/Header';
 
 export const MainPage = () => {
   return (

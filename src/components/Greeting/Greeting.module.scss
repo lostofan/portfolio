@@ -1,0 +1,55 @@
+@import '../../styles/variables.scss';
+
+.root {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+  position: relative;
+  height: 80vh;
+}
+.textBlock {
+  width: 50%;
+}
+.heading {
+  @include font(32px, $semi, $white);
+  margin-bottom: 32px;
+}
+.highlight {
+  color: $secondary;
+}
+
+.currentWork {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  border: 1px solid $gray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  @include font(16px, $medium, $gray);
+}
+.ico {
+  background-color: $secondary;
+  border: 2px solid $gray;
+  width: 16px;
+  height: 16px;
+  margin: auto 10px;
+}
+.current {
+  color: $gray;
+}
+.currentHighlight {
+  @include font(16px, $semi, $white);
+}
+
+.logo {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  z-index: -1;
+  width: 300px;
+}

@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+
+.root {
+  padding-top: 64px;
+  margin-bottom: 100px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.link {
+  background-color: $maincolor;
+  border: none;
+  @include font(16px, $medium, $white);
+}
+.link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.root {
+  padding-top: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 145px;
+  .links {
+    border: 1px solid $gray;
+    width: 240px;
+    padding: 16px;
+    .heading {
+      @include font(16px, $semi, $white);
+    }
+  }
+}
