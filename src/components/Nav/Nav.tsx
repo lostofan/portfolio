@@ -29,9 +29,6 @@ export const Nav = () => {
             contacts
           </a>
         </li>
-        <li className={styles.item}>
-          <div className={styles.language}>EN</div>
-        </li>
       </ul>
     </nav>
   );

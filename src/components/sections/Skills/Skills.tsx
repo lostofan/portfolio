@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Skills.module.scss';
-import { HeadingDivider } from '../HeadingDivider/HeadingDivider';
+import { HeadingDivider } from '../../HeadingDivider/HeadingDivider';
 
 interface SkillsProps {
   isPage: boolean;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeadingDivider } from '../HeadingDivider/HeadingDivider';
+import { HeadingDivider } from '../../HeadingDivider/HeadingDivider';
 import Link from 'next/link';
 
 import styles from './About.module.scss';

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Projects } from '../../components/Projects/Projects';
+import { Projects } from '../../components/sections/Projects/Projects';
 
 import { HeadingDivider } from '../../components/HeadingDivider/HeadingDivider';
 import { ProjectItem } from '../../components/ProjectItem/ProjectItem';
@@ -9,7 +9,7 @@ const WorksPage = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <main className="worksPage">
+    <main className="worksPage" style={{ overflow: 'hidden' }}>
       <Projects isPage={true} />
       <HeadingDivider
         name="small-projects"
@@ -18,7 +18,7 @@ const WorksPage = () => {
         isLine={false}
         isBack={false}
       />
-      <div className="projects__wrapper" data-aos="flip-up">
+      <div className="projects__wrapper" style={{ display: 'flex' }} data-aos="flip-up">
         <ProjectItem
           stack="Javascript SCSS HTML"
           name="Posts"

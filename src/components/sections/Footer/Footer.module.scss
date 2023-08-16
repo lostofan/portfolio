@@ -1,0 +1,51 @@
+@import '../../../styles/variables.scss';
+
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32px 0;
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+  .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 15px;
+    .logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      img {
+        width: 30px;
+      }
+    }
+
+    .email {
+      @include font(16px, $reg, $gray);
+    }
+  }
+  .article {
+    @media (max-width: 480px) {
+      text-align: center;
+    }
+  }
+  .rightBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .links {
+      display: flex;
+      flex-direction: row;
+      svg {
+        fill: #abb2bf;
+        &:hover {
+          fill: $white;
+        }
+      }
+    }
+  }
+}

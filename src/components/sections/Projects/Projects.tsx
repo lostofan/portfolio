@@ -1,9 +1,9 @@
 import React from 'react';
-import { ProjectItem } from '../ProjectItem/ProjectItem';
+import { ProjectItem } from '../../ProjectItem/ProjectItem';
 
 import styles from './Projects.module.scss';
 
-import { HeadingDivider } from '../HeadingDivider/HeadingDivider';
+import { HeadingDivider } from '../../HeadingDivider/HeadingDivider';
 interface ProjectsProps {
   isPage: boolean;
 }

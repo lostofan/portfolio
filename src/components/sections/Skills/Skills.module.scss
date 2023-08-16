@@ -1,9 +1,11 @@
-@import '../../styles/variables.scss';
+@import '../../../styles/variables.scss';
 
+.root {
+  margin-bottom: 150px;
+  overflow: hidden;
+}
 .wrapper {
-  padding-top: 64px;
-  margin-top: 45px;
-  flex-basis: 60%;
+  padding-top: 150px;
   display: grid;
   grid-template:
     '. . c' 1fr
@@ -11,6 +13,13 @@
     'a b d' 1fr
     '. . d' 1fr;
   gap: 16px;
+  @media (max-width: 480px) {
+    grid-template:
+      'a' 1fr
+      'b' 1fr
+      'c' 1fr
+      'd' 1fr;
+  }
 }
 .item {
   border: 1px solid $gray;

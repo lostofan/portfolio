@@ -3,13 +3,13 @@ import Head from 'next/head';
 
 import React from 'react';
 
-import { Header } from 'components/Header/Header';
-import { Greeting } from 'components/Greeting/Greeting';
-import { Projects } from 'components/Projects/Projects';
-import { Skills } from 'components/Skills/Skills';
-import { About } from 'components/About/About';
-import { Contacts } from 'components/Contacts/Contacts';
-import { Footer } from '../components/Footer/Footer';
+import { Header } from 'components/sections/Header/Header';
+import { Greeting } from 'components/sections/Greeting/Greeting';
+import { Projects } from 'components/sections/Projects/Projects';
+import { Skills } from 'components/sections/Skills/Skills';
+import { About } from 'components/sections/About/About';
+import { Contacts } from 'components/sections/Contacts/Contacts';
+import { Footer } from '../components/sections/Footer/Footer';
 
 const Home: NextPage = () => {
   return (

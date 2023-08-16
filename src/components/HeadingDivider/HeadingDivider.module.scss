@@ -10,6 +10,12 @@
 }
 .view,
 .back {
-  position: absolute;
-  right: 0;
+  margin-left: auto;
+  padding-left: 10px;
+  font-size: clamp(0.625rem, 0.1563rem + 1.5vw, 1rem);
+  text-align: center;
+}
+.view:hover,
+.back:hover {
+  color: $secondary;
 }

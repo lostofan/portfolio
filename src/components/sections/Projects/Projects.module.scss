@@ -1,13 +1,15 @@
-@import '../../styles/variables.scss';
+@import '../../../styles/variables.scss';
 
 .root {
   padding-top: 64px;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
   margin-top: 48px;

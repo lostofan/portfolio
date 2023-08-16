@@ -4,6 +4,9 @@
   display: flex;
   flex-direction: row;
   gap: 32px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 .item {
   @include font(16pt, $medium, $gray);

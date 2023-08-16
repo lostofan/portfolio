@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
-import { About } from '../../components/About/About';
-import { Skills } from '../../components/Skills/Skills';
+import { About } from '../../components/sections/About/About';
+import { Skills } from '../../components/sections/Skills/Skills';
 import { HeadingDivider } from '../../components/HeadingDivider/HeadingDivider';
 
 const AboutPage = () => {
