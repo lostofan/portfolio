@@ -5,7 +5,7 @@ import Link from 'next/link';
 import router, { useRouter } from 'next/router';
 
 interface BurgerMenuProps {
-  names: string[];
+  names: { [key: string]: string }[];
   menuActive: boolean;
 }
 
@@ -16,9 +16,9 @@ export const BurgerMenu: React.FC<BurgerMenuProps> = ({ names, menuActive }) => 
       <ul className={styles.list}>
         {names.map((name, idx) => (
           <li className={styles.item} key={idx}>
-            <a href={`#${name}`} className={styles.link}>
+            <a href={`#${name.href}`} className={styles.link}>
               <span className="tag">#</span>
-              {name}
+              {name.name}
             </a>
           </li>
         ))}

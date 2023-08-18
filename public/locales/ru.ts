@@ -1,7 +1,12 @@
 export const ru = {
   title: 'Пронин Артём',
   header: {
-    nav: ['домой', 'работы', 'обо-мне', 'контакты'],
+    nav: [
+      { name: 'домой', href: 'home' },
+      { name: 'работы', href: 'works' },
+      { name: 'обо-мне', href: 'about' },
+      { name: 'контакты', href: 'contacts' },
+    ],
   },
   greeting: {
     heading: `Привет! Меня зовут Артём. Я `,
@@ -10,6 +15,7 @@ export const ru = {
     current: 'В данный момент работаю над ',
     task: 'Портфолио',
     resume: 'Резюме',
+    href: '/resume/ru.pdf',
   },
   projects: {
     name: 'проекты',

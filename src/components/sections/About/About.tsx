@@ -13,7 +13,7 @@ interface AboutProps {
 
 export const About: React.FC<AboutProps> = ({ isPage, locale }) => {
   return (
-    <section className={styles.root} id="about-me">
+    <section className={styles.root} id="about">
       {isPage ? (
         <HeadingDivider
           isLink={false}

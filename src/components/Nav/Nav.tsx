@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 interface NavProps {
-  names: string[];
+  names: { [key: string]: string }[];
 }
 
 export const Nav: React.FC<NavProps> = ({ names }) => {
@@ -15,9 +15,9 @@ export const Nav: React.FC<NavProps> = ({ names }) => {
       <ul className={styles.list}>
         {names.map((name, idx) => (
           <li className={styles.item} key={idx}>
-            <a href={`#${name}`} className={styles.link}>
+            <a href={`#${name.href}`} className={styles.link}>
               <span className="tag">#</span>
-              {name}
+              {name.name}
             </a>
           </li>
         ))}

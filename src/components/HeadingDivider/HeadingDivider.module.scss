@@ -19,3 +19,13 @@
 .back:hover {
   color: $secondary;
 }
+.heading {
+  margin-right: 16px;
+  @include font(clamp(1.5rem, 0.875rem + 2vw, 2rem), $medium, $white);
+}
+.line {
+  margin-left: 0;
+  width: 30%;
+  height: 1px;
+  background-color: $secondary;
+}

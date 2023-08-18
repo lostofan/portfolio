@@ -20,11 +20,11 @@ export const HeadingDivider: React.FC<DividerProps> = ({
 }) => {
   return (
     <div className={styles.root}>
-      <h1 className="heading">
+      <h1 className={styles.heading}>
         {isTag ? <span className="tag">#</span> : <span className="tag">/</span>}
         {locale[0]}
       </h1>
-      {isLine ? <div className="line"></div> : false}
+      {isLine ? <div className={styles.line}></div> : false}
       {isLink ? (
         <Link href="/works" className={styles.view}>
           {[locale[1]]} ~~&gt;
@@ -34,7 +34,7 @@ export const HeadingDivider: React.FC<DividerProps> = ({
       )}
       {isBack ? (
         <Link href="/" className={styles.back}>
-          {locale[2]} <span className="heading__back_symbol">&lt;</span>
+          {locale[2]} <span>&lt;</span>
         </Link>
       ) : (
         false

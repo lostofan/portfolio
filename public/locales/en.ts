@@ -1,7 +1,12 @@
 export const en = {
   title: 'Pronin Artem',
   header: {
-    nav: ['home', 'works', 'about-me', 'contacts'],
+    nav: [
+      { name: 'home', href: 'home' },
+      { name: 'works', href: 'works' },
+      { name: 'about', href: 'about' },
+      { name: 'contacts', href: 'contacts' },
+    ],
   },
   greeting: {
     heading: `Hi! My name is Artem. I'm a `,
@@ -10,6 +15,7 @@ export const en = {
     current: 'Currently working on ',
     task: 'Portfolio',
     resume: 'Resume',
+    href: '/resume/en.pdf',
   },
   projects: {
     name: 'projects',
