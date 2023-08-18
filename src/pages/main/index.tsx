@@ -7,7 +7,7 @@ import { About } from '../../components/sections/About/About';
 import { Contacts } from '../../components/sections/Contacts/Contacts';
 import { Header } from '../../components/sections/Header/Header';
 
-export const MainPage = () => {
+const MainPage = () => {
   return (
     <main>
       <div className="main__wrapper">
@@ -21,3 +21,5 @@ export const MainPage = () => {
     </main>
   );
 };
+
+export default MainPage;
