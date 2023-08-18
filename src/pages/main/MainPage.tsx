@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Home } from '../../components/sections/Greeting/Greeting';
+import { Greeting } from '../../components/sections/Greeting/Greeting';
 import { Projects } from '../../components/sections/Projects/Projects';
 import { Skills } from '../../components/sections/Skills/Skills';
 import { About } from '../../components/sections/About/About';
@@ -12,7 +12,7 @@ export const MainPage = () => {
     <main>
       <div className="main__wrapper">
         <Header />
-        <Home />
+        <Greeting />
         <Projects isPage={false} />
         <Skills isPage={false} />
         <About isPage={false} />
