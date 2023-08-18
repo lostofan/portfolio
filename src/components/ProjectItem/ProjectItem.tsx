@@ -21,7 +21,7 @@ export const ProjectItem: React.FC<Projectprops> = ({
   git,
 }) => {
   return (
-    <div className={styles.root}>
+    <div className={styles.root} data-aos="flip-up">
       <img
         src={img}
         alt=""

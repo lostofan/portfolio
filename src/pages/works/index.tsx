@@ -24,10 +24,7 @@ const WorksPage = () => {
         isBack={false}
         locale={[t.projects.small, t.projects.viewall, t.projects.back]}
       />
-      <div
-        className="projects__wrapper"
-        style={{ display: 'flex', justifyContent: 'center' }}
-        data-aos="flip-up">
+      <div className="projects__wrapper" style={{ display: 'flex', justifyContent: 'center' }}>
         <ProjectItem
           stack="Javascript SCSS HTML"
           name="Posts"
