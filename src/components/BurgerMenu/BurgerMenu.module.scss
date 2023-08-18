@@ -45,3 +45,28 @@
     color: $gray;
   }
 }
+
+.langs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.languageBtn {
+  background-color: $maincolor;
+  border: none;
+  color: $gray;
+  font-size: 20px;
+  cursor: pointer;
+  &:hover {
+    color: $white;
+  }
+  &:first-child {
+    margin-right: 5px;
+  }
+  &:last-child {
+    margin-left: 5px;
+  }
+}
+.languageBtn_active {
+  color: $secondary;
+}
