@@ -13,8 +13,8 @@ export const Nav: React.FC<NavProps> = ({ names }) => {
   return (
     <nav>
       <ul className={styles.list}>
-        {names.map((name) => (
-          <li className={styles.item} key={name}>
+        {names.map((name, idx) => (
+          <li className={styles.item} key={idx}>
             <a href={`#${name}`} className={styles.link}>
               <span className="tag">#</span>
               {name}

@@ -43,6 +43,9 @@ a {
   &:hover {
     background-color: $secondary;
   }
+  &:nth-child(3) {
+    margin-left: 10px;
+  }
 }
 a {
   color: $white;

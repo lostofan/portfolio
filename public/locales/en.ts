@@ -9,6 +9,7 @@ export const en = {
     contact: 'Contact me',
     current: 'Currently working on ',
     task: 'Portfolio',
+    resume: 'Resume',
   },
   projects: {
     name: 'projects',
@@ -22,6 +23,7 @@ export const en = {
       'A list of posts in pure JS with the ability to delete and add new ones, posts open in a modal window with a list of comments + pagination',
     ],
     viewall: 'View all',
+    back: 'Back',
   },
   skills: {
     name: 'skills',
@@ -30,6 +32,7 @@ export const en = {
     tools: 'Tools',
     frameworks: 'Frameworks',
     viewall: 'View all',
+    back: 'Back',
   },
   about: {
     name: 'about',
@@ -44,13 +47,16 @@ export const en = {
     achieve high results and provide a high-quality user experience through development
     attractive and intuitive interfaces.`,
     funfacts: 'my-fun-facts',
+    readmore: 'Read more',
     viewall: 'View all',
+    back: 'Back',
   },
   contacts: {
     name: 'contacts',
     article:
       'I am looking for interesting projects with tasks of varying complexity. If you have any questions or suggestions - write me!',
     viewall: 'View all',
+    back: 'Back',
     msgme: 'Message me here',
   },
   footer: {

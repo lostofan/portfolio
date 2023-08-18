@@ -23,7 +23,7 @@ const AboutPage = () => {
         isLink={false}
         isLine={false}
         isBack={false}
-        locale={[t.about.funfacts, t.about.viewall]}
+        locale={[t.about.funfacts, t.about.viewall, t.about.back]}
       />
     </main>
   );

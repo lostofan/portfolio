@@ -19,6 +19,9 @@ export const Greeting: React.FC<GreetingProps> = ({ locale }) => {
         <button className="primary-btn">
           <a href="mailto:kolog007@gmail.com">{locale.contact}</a>
         </button>
+        <button className="primary-btn">
+          <a href="mailto:kolog007@gmail.com">{locale.resume}</a>
+        </button>
       </div>
       <div className={styles.imageBlock}>
         <img className={styles.logo} src="imgs/logo.png" alt="" />

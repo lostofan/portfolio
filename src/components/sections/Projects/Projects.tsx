@@ -1,6 +1,5 @@
 import React from 'react';
 import { ProjectItem } from '../../ProjectItem/ProjectItem';
-
 import styles from './Projects.module.scss';
 
 import { HeadingDivider } from '../../HeadingDivider/HeadingDivider';
@@ -11,6 +10,7 @@ interface ProjectsProps {
     apps: string;
     overview: string[];
     viewall: string;
+    back: string;
   };
 }
 
@@ -23,7 +23,7 @@ export const Projects: React.FC<ProjectsProps> = ({ isPage, locale }) => {
           isTag={false}
           isLine={true}
           isBack={true}
-          locale={[locale.name, locale.viewall]}
+          locale={[locale.name, locale.viewall, locale.back]}
         />
       ) : (
         <HeadingDivider
@@ -31,7 +31,7 @@ export const Projects: React.FC<ProjectsProps> = ({ isPage, locale }) => {
           isTag={true}
           isLine={true}
           isBack={false}
-          locale={[locale.name, locale.viewall]}
+          locale={[locale.name, locale.viewall, locale.back]}
         />
       )}
       {isPage ? (
@@ -40,12 +40,12 @@ export const Projects: React.FC<ProjectsProps> = ({ isPage, locale }) => {
           isTag={true}
           isLine={false}
           isBack={false}
-          locale={[locale.name, locale.viewall]}
+          locale={[locale.name, locale.viewall, locale.back]}
         />
       ) : (
         false
       )}
-      <div className={styles.wrapper} data-aos="flip-up">
+      <div className={styles.wrapper}>
         <ProjectItem
           stack="Typescript React Redux SCSS HTML"
           name="Horror Clicker"

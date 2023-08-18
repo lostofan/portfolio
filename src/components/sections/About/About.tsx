@@ -20,7 +20,7 @@ export const About: React.FC<AboutProps> = ({ isPage, locale }) => {
           isTag={false}
           isLine={true}
           isBack={true}
-          locale={[locale.name, locale.viewall]}
+          locale={[locale.name, locale.viewall, locale.back]}
         />
       ) : (
         <HeadingDivider
@@ -28,7 +28,7 @@ export const About: React.FC<AboutProps> = ({ isPage, locale }) => {
           isTag={true}
           isLine={true}
           isBack={false}
-          locale={[locale.name, locale.viewall]}
+          locale={[locale.name, locale.viewall, locale.back]}
         />
       )}
 
@@ -47,7 +47,7 @@ export const About: React.FC<AboutProps> = ({ isPage, locale }) => {
             false
           ) : (
             <Link href="/about" className="primary-btn">
-              Read more -&gt;
+              {locale.readmore} -&gt;
             </Link>
           )}
         </div>

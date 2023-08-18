@@ -17,7 +17,7 @@ export const Skills: React.FC<SkillsProps> = ({ isPage, locale }) => {
           isLink={false}
           isLine={false}
           isBack={false}
-          locale={[locale.name, locale.viewall]}
+          locale={[locale.name, locale.viewall, locale.back]}
         />
       ) : (
         <HeadingDivider
@@ -25,7 +25,7 @@ export const Skills: React.FC<SkillsProps> = ({ isPage, locale }) => {
           isLink={false}
           isLine={true}
           isBack={false}
-          locale={[locale.name, locale.viewall]}
+          locale={[locale.name, locale.viewall, locale.back]}
         />
       )}
       <div className={styles.wrapper}>

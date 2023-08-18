@@ -22,7 +22,7 @@ const WorksPage = () => {
         isLink={false}
         isLine={false}
         isBack={false}
-        locale={[t.projects.small, t.projects.viewall]}
+        locale={[t.projects.small, t.projects.viewall, t.projects.back]}
       />
       <div
         className="projects__wrapper"

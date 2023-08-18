@@ -34,7 +34,7 @@ export const HeadingDivider: React.FC<DividerProps> = ({
       )}
       {isBack ? (
         <Link href="/" className={styles.back}>
-          Back <span className="heading__back_symbol">&lt;</span>
+          {locale[2]} <span className="heading__back_symbol">&lt;</span>
         </Link>
       ) : (
         false

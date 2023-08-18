@@ -16,7 +16,7 @@ export const Contacts: React.FC<ContactsProps> = ({ locale }) => {
         isTag={true}
         isLine={true}
         isBack={false}
-        locale={[locale.name, locale.viewall]}
+        locale={[locale.name, locale.viewall, locale.back]}
       />
       <div className={styles.root}>
         <div className={styles.text}>{locale.article}</div>
