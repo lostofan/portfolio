@@ -1,12 +1,7 @@
 import React from 'react';
 import styles from './Contacts.module.scss';
 import { HeadingDivider } from 'components/HeadingDivider/HeadingDivider';
-
-interface ContactsProps {
-  locale: {
-    [key: string]: string;
-  };
-}
+import { ContactsProps } from './Contacts.types';
 
 export const Contacts: React.FC<ContactsProps> = ({ locale }) => {
   return (

@@ -2,16 +2,9 @@ import Link from 'next/link';
 import React from 'react';
 
 import styles from './HeadingDivider.module.scss';
+import { HeadingDividerProps } from './HeadingDivider.types';
 
-interface DividerProps {
-  isTag: boolean;
-  isLink: boolean;
-  isLine: boolean;
-  isBack: boolean;
-  locale: string[];
-}
-
-export const HeadingDivider: React.FC<DividerProps> = ({
+export const HeadingDivider: React.FC<HeadingDividerProps> = ({
   isTag,
   isLink,
   isLine,

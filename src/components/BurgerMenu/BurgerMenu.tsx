@@ -2,12 +2,8 @@ import React from 'react';
 import styles from './BurgerMenu.module.scss';
 import { LinksBar } from 'components/LinksBar/LinksBar';
 import Link from 'next/link';
-import router, { useRouter } from 'next/router';
-
-interface BurgerMenuProps {
-  names: { [key: string]: string }[];
-  menuActive: boolean;
-}
+import { useRouter } from 'next/router';
+import { BurgerMenuProps } from './BurgerMenu.types';
 
 export const BurgerMenu: React.FC<BurgerMenuProps> = ({ names, menuActive }) => {
   const router = useRouter();

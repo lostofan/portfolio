@@ -1,13 +1,8 @@
 import React from 'react';
 import styles from './Skills.module.scss';
 import { HeadingDivider } from '../../HeadingDivider/HeadingDivider';
+import { SkillsProps } from './Skills.types';
 
-interface SkillsProps {
-  isPage: boolean;
-  locale: {
-    [key: string]: string;
-  };
-}
 export const Skills: React.FC<SkillsProps> = ({ isPage, locale }) => {
   return (
     <section className={styles.root}>

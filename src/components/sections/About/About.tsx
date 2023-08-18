@@ -3,13 +3,7 @@ import { HeadingDivider } from '../../HeadingDivider/HeadingDivider';
 import Link from 'next/link';
 
 import styles from './About.module.scss';
-
-interface AboutProps {
-  isPage: boolean;
-  locale: {
-    [key: string]: string;
-  };
-}
+import { AboutProps } from './About.types';
 
 export const About: React.FC<AboutProps> = ({ isPage, locale }) => {
   return (

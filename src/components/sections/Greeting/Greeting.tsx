@@ -1,12 +1,7 @@
 import React from 'react';
 
 import styles from './Greeting.module.scss';
-
-interface GreetingProps {
-  locale: {
-    [key: string]: string;
-  };
-}
+import { GreetingProps } from './Greeting.types';
 
 export const Greeting: React.FC<GreetingProps> = ({ locale }) => {
   return (

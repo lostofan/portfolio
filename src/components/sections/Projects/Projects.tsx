@@ -3,16 +3,7 @@ import { ProjectItem } from '../../ProjectItem/ProjectItem';
 import styles from './Projects.module.scss';
 
 import { HeadingDivider } from '../../HeadingDivider/HeadingDivider';
-interface ProjectsProps {
-  isPage: boolean;
-  locale: {
-    name: string;
-    apps: string;
-    overview: string[];
-    viewall: string;
-    back: string;
-  };
-}
+import { ProjectsProps } from './Projects.types';
 
 export const Projects: React.FC<ProjectsProps> = ({ isPage, locale }) => {
   return (

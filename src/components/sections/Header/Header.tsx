@@ -4,12 +4,7 @@ import { Nav } from 'components/Nav';
 import { BurgerMenu } from 'components/BurgerMenu';
 import { BurgerButton } from 'components/BurgerButton';
 import { ClickAwayListener } from 'components/ClickAwayListener';
-
-interface HeaderProps {
-  locale: {
-    nav: string[];
-  };
-}
+import { HeaderProps } from './Header.types';
 
 export const Header: React.FC<HeaderProps> = ({ locale }) => {
   const [menuActive, setMenuActive] = useState(false);

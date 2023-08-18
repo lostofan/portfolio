@@ -2,12 +2,7 @@ import React from 'react';
 
 import styles from './Footer.module.scss';
 import { LinksBar } from 'components/LinksBar/LinksBar';
-
-interface FooterProps {
-  locale: {
-    [key: string]: string;
-  };
-}
+import { FooterProps } from './Footer.types';
 
 export const Footer: React.FC<FooterProps> = ({ locale }) => {
   return (

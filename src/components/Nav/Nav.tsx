@@ -2,10 +2,7 @@ import React from 'react';
 import styles from './Nav.module.scss';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-
-interface NavProps {
-  names: { [key: string]: string }[];
-}
+import { NavProps } from './Nav.types';
 
 export const Nav: React.FC<NavProps> = ({ names }) => {
   const router = useRouter();

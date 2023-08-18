@@ -1,17 +1,9 @@
 import React from 'react';
 
 import styles from './ProjectItem.module.scss';
+import { ProjectItemprops } from './ProjectItem.types';
 
-interface Projectprops {
-  stack: string;
-  name: string;
-  overview: string;
-  img: string;
-  gif: string;
-  deploy: string;
-  git: string;
-}
-export const ProjectItem: React.FC<Projectprops> = ({
+export const ProjectItem: React.FC<ProjectItemprops> = ({
   stack,
   name,
   overview,

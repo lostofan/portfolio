@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import styles from './BurgerButton.module.scss';
+import { BurgerButtonProps } from './BurgerButton.types';
 
-interface BurgerProps {
-  menuActive: boolean;
-  setMenuActive: React.Dispatch<React.SetStateAction<boolean>>;
-}
-export const BurgerButton: React.FC<BurgerProps> = ({ menuActive, setMenuActive }) => {
+export const BurgerButton: React.FC<BurgerButtonProps> = ({ menuActive, setMenuActive }) => {
   return (
     <div>
       <div
