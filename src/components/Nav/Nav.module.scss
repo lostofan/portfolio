@@ -23,3 +23,16 @@
     color: $gray;
   }
 }
+
+.languageBtn {
+  background-color: $maincolor;
+  border: none;
+  color: $gray;
+  cursor: pointer;
+  &:hover {
+    color: $white;
+  }
+}
+.languageBtn_active {
+  color: $secondary;
+}

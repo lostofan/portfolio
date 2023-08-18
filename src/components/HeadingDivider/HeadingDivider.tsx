@@ -4,24 +4,30 @@ import React from 'react';
 import styles from './HeadingDivider.module.scss';
 
 interface DividerProps {
-  name: string;
   isTag: boolean;
   isLink: boolean;
   isLine: boolean;
   isBack: boolean;
+  locale: string[];
 }
 
-export const HeadingDivider: React.FC<DividerProps> = ({ name, isTag, isLink, isLine, isBack }) => {
+export const HeadingDivider: React.FC<DividerProps> = ({
+  isTag,
+  isLink,
+  isLine,
+  isBack,
+  locale,
+}) => {
   return (
     <div className={styles.root}>
       <h1 className="heading">
         {isTag ? <span className="tag">#</span> : <span className="tag">/</span>}
-        {name}
+        {locale[0]}
       </h1>
       {isLine ? <div className="line"></div> : false}
       {isLink ? (
         <Link href="/works" className={styles.view}>
-          View all ~~&gt;
+          {[locale[1]]} ~~&gt;
         </Link>
       ) : (
         false

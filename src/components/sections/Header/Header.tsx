@@ -5,8 +5,13 @@ import { BurgerMenu } from 'components/BurgerMenu';
 import { BurgerButton } from 'components/BurgerButton';
 import { ClickAwayListener } from 'components/ClickAwayListener';
 
-export const Header = () => {
-  const list: string[] = ['home', 'works', 'about-me', 'contacts'];
+interface HeaderProps {
+  locale: {
+    nav: string[];
+  };
+}
+
+export const Header: React.FC<HeaderProps> = ({ locale }) => {
   const [menuActive, setMenuActive] = useState(false);
 
   const handleClickAway = () => {
@@ -20,11 +25,11 @@ export const Header = () => {
         <div className={styles.logo}>
           <img src="imgs/logo2.png" alt="" /> Pronin
         </div>
-        <Nav names={list} />
+        <Nav names={locale.nav} />
       </div>
       <ClickAwayListener onClickAway={handleClickAway}>
         <BurgerButton menuActive={menuActive} setMenuActive={setMenuActive} />
-        <BurgerMenu names={list} menuActive={menuActive} />
+        <BurgerMenu names={locale.nav} menuActive={menuActive} />
       </ClickAwayListener>
     </header>
   );

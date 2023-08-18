@@ -3,7 +3,13 @@ import React from 'react';
 import styles from './Footer.module.scss';
 import { LinksBar } from 'components/LinksBar/LinksBar';
 
-export const Footer = () => {
+interface FooterProps {
+  locale: {
+    [key: string]: string;
+  };
+}
+
+export const Footer: React.FC<FooterProps> = ({ locale }) => {
   return (
     <footer className={styles.root}>
       <div className={styles.leftBlock}>
@@ -13,10 +19,10 @@ export const Footer = () => {
           </div>
           <p className={styles.email}>kolog007@gmail.com</p>
         </div>
-        <div className={styles.article}>Front-end developer</div>
+        <div className={styles.article}>{locale.front}</div>
       </div>
       <div className={styles.rightBlock}>
-        <p>Media</p>
+        <p>{locale.media}</p>
         <LinksBar />
       </div>
     </footer>

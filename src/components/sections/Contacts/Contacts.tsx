@@ -2,18 +2,26 @@ import React from 'react';
 import styles from './Contacts.module.scss';
 import { HeadingDivider } from 'components/HeadingDivider/HeadingDivider';
 
-export const Contacts = () => {
+interface ContactsProps {
+  locale: {
+    [key: string]: string;
+  };
+}
+
+export const Contacts: React.FC<ContactsProps> = ({ locale }) => {
   return (
     <section className="main__contacts contacts" id="contacts">
-      <HeadingDivider name="contacts" isLink={false} isTag={true} isLine={true} isBack={false} />
+      <HeadingDivider
+        isLink={false}
+        isTag={true}
+        isLine={true}
+        isBack={false}
+        locale={[locale.name, locale.viewall]}
+      />
       <div className={styles.root}>
-        <div className={styles.text}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum voluptatem nam ab! Ullam
-          molestiae dolore beatae dolores laboriosam ad, sapiente molestias, iste qui provident
-          earum, saepe quasi. Non, magni beatae.
-        </div>
+        <div className={styles.text}>{locale.article}</div>
         <div className={styles.links}>
-          <h2 className={styles.heading}>Message me here</h2>
+          <h2 className={styles.heading}>{locale.msgme}</h2>
           <div className={styles.link}>
             <svg
               width="32"

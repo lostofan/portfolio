@@ -41,7 +41,7 @@ export const ProjectItem: React.FC<Projectprops> = ({
           </button>
           <button className="secondary-btn">
             <a href={git} className="project__git">
-              Git &gt;=
+              Git &gt;
             </a>
           </button>
         </div>
