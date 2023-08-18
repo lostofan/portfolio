@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  svg {
+    fill: #abb2bf;
+    &:hover {
+      fill: $white;
+    }
+  }
+}

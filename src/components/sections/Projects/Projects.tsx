@@ -10,7 +10,7 @@ interface ProjectsProps {
 
 export const Projects: React.FC<ProjectsProps> = ({ isPage }) => {
   return (
-    <section id="projects" className={styles.root}>
+    <section id="works" className={styles.root}>
       {isPage ? (
         <HeadingDivider name="projects" isLink={false} isTag={false} isLine={true} isBack={true} />
       ) : (

@@ -6,6 +6,20 @@
   animation-iteration-count: infinite;
 }
 
+.burger__menu {
+  animation: 1.5s 1 normal ts1;
+  animation-fill-mode: forwards;
+}
+
+.burger__menu_closer {
+  transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
+}
+
+.burger__menu:last-child {
+  animation: 1.5s 1 normal ts2;
+  animation-fill-mode: forwards;
+}
+
 @keyframes blink {
   from {
     background-color: $secondary;
@@ -14,5 +28,23 @@
   to {
     background-color: $gray;
     border-color: $secondary;
+  }
+}
+
+@keyframes ts1 {
+  0% {
+    transform: rotate(0) translateY(0);
+  }
+  100% {
+    transform: rotate(45deg) translateY(-6px);
+  }
+}
+
+@keyframes ts2 {
+  from {
+    transform: rotate(0) translateY(0);
+  }
+  to {
+    transform: rotate(-45deg) translateY(6px);
   }
 }

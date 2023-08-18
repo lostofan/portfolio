@@ -18,7 +18,10 @@ const WorksPage = () => {
         isLine={false}
         isBack={false}
       />
-      <div className="projects__wrapper" style={{ display: 'flex' }} data-aos="flip-up">
+      <div
+        className="projects__wrapper"
+        style={{ display: 'flex', justifyContent: 'center' }}
+        data-aos="flip-up">
         <ProjectItem
           stack="Javascript SCSS HTML"
           name="Posts"

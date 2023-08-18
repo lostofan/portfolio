@@ -24,11 +24,11 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      &:hover svg {
+        fill: $white;
+      }
       svg {
         fill: #abb2bf;
-        &:hover {
-          fill: $white;
-        }
       }
     }
     .heading {

@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.root {
+  display: block;
+  position: fixed;
+  padding: 20px;
+  top: 55px;
+  right: 0;
+  background-color: $maincolor;
+  width: 200px;
+  transform: translateX(130%);
+  transition: all 0.4s;
+  &:after {
+    content: '';
+    height: 15px;
+    width: 100%;
+    background-color: black;
+  }
+}
+.opened {
+  transform: translateX(0);
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  &:after {
+    content: '';
+    margin-bottom: 5px;
+  }
+}
+.item {
+  @include font(16pt, $medium, $gray);
+}
+
+.link {
+  text-decoration: underline;
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $white;
+  }
+  &:hover {
+    color: $gray;
+  }
+}

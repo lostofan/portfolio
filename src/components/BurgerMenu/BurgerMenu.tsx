@@ -1,13 +1,15 @@
 import React from 'react';
-import styles from './Nav.module.scss';
+import styles from './BurgerMenu.module.scss';
+import { LinksBar } from 'components/LinksBar/LinksBar';
 
-interface NavProps {
+interface BurgerMenuProps {
   names: string[];
+  menuActive: boolean;
 }
 
-export const Nav: React.FC<NavProps> = ({ names }) => {
+export const BurgerMenu: React.FC<BurgerMenuProps> = ({ names, menuActive }) => {
   return (
-    <nav>
+    <nav className={!menuActive ? styles.root : `${styles.root} ${styles.opened}`}>
       <ul className={styles.list}>
         {names.map((name) => (
           <li className={styles.item} key={name}>
@@ -18,6 +20,7 @@ export const Nav: React.FC<NavProps> = ({ names }) => {
           </li>
         ))}
       </ul>
+      <LinksBar />
     </nav>
   );
 };
