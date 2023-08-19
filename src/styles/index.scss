@@ -67,16 +67,3 @@ a {
 .tag {
   color: $secondary;
 }
-//Дизайн линии
-
-//Дизайн заголовков
-.heading {
-  margin-right: 16px;
-  @include font(32px, $medium, $white);
-}
-.headings {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}

@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+.root {
+  margin-bottom: 15px;
+}
+.factList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+  margin-bottom: 15px;
+  .fact {
+    text-decoration: none;
+    border: 1px solid $gray;
+    padding: 8px;
+    font-size: 14px;
+  }
+  &:after {
+    content: '';
+    height: 15px;
+  }
+}

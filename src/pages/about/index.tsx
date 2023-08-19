@@ -6,7 +6,7 @@ import { HeadingDivider } from '../../components/HeadingDivider/HeadingDivider';
 import { useRouter } from 'next/router';
 import { en } from '../../../public/locales/en';
 import { ru } from '../../../public/locales/ru';
-
+import styles from './aboutPage.module.scss';
 const AboutPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,7 +15,7 @@ const AboutPage = () => {
   const router = useRouter();
   const t = router.locale === 'en' ? en : ru;
   return (
-    <main className="aboutPage">
+    <main className={styles.root}>
       <About isPage={true} locale={t.about} />
       <Skills isPage={true} locale={t.skills} />
       <HeadingDivider
@@ -25,6 +25,13 @@ const AboutPage = () => {
         isBack={false}
         locale={[t.about.funfacts, t.about.viewall, t.about.back]}
       />
+      <ul className={styles.factList}>
+        {t.about.facts.map((fact, idx) => (
+          <li className={styles.fact} key={idx}>
+            {fact}
+          </li>
+        ))}
+      </ul>
     </main>
   );
 };

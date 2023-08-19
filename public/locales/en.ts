@@ -53,6 +53,13 @@ export const en = {
     achieve high results and provide a high-quality user experience through development
     attractive and intuitive interfaces.`,
     funfacts: 'my-fun-facts',
+    facts: [
+      'I am interested in the development of neural networks',
+      'Was a co-creator of the famous VK group',
+      'I often ride a bike with friends',
+      'Favorite movie - Apocalypse Now',
+      'Doing digital art',
+    ],
     readmore: 'Read more',
     viewall: 'View all',
     back: 'Back',
