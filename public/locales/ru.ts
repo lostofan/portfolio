@@ -13,7 +13,7 @@ export const ru = {
     span: 'Frontend разработчик.',
     contact: 'Напишите мне',
     current: 'В данный момент работаю над ',
-    task: 'Портфолио',
+    task: 'Fullstack Приложением',
     resume: 'Резюме',
     href: '/resume/ru.pdf',
   },
