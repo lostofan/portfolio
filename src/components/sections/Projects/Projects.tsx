@@ -40,7 +40,7 @@ export const Projects: React.FC<ProjectsProps> = ({ isPage, locale }) => {
         <ProjectItem
           stack="TypeScript Next.js React Prisma"
           name="Delivery APP"
-          overview={locale.overview[2]}
+          overview={locale.overview[0]}
           img="imgs/delivery.jpg"
           gif="imgs/delivery.gif"
           deploy="https://delivery-app-plum.vercel.app/"
@@ -49,7 +49,7 @@ export const Projects: React.FC<ProjectsProps> = ({ isPage, locale }) => {
         <ProjectItem
           stack="Typescript React Redux SCSS HTML"
           name="Horror Clicker"
-          overview={locale.overview[0]}
+          overview={locale.overview[1]}
           img="imgs/horror.jpg"
           gif="imgs/horror.gif"
           deploy="https://verdant-rugelach-c00bcf.netlify.app/"
@@ -58,7 +58,7 @@ export const Projects: React.FC<ProjectsProps> = ({ isPage, locale }) => {
         <ProjectItem
           stack="TypeScript React Redux SCSS HTML"
           name="Burger-App"
-          overview={locale.overview[1]}
+          overview={locale.overview[2]}
           img="imgs/burger.jpg"
           gif="imgs/burger.gif"
           deploy="https://serene-phoenix-afb553.netlify.app"
