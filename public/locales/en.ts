@@ -22,9 +22,9 @@ export const en = {
     apps: 'complete-apps',
     small: 'small-projects',
     overview: [
+      'Fullstack Delivery shop App',
       'Small game in a clicker genre',
       'Burger constructor app',
-      'Delivery shop App',
       'You are here',
       'A list of posts in pure JS with the ability to delete and add new ones, posts open in a modal window with a list of comments + pagination',
     ],

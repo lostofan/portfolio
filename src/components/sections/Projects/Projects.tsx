@@ -38,6 +38,15 @@ export const Projects: React.FC<ProjectsProps> = ({ isPage, locale }) => {
       )}
       <div className={styles.wrapper}>
         <ProjectItem
+          stack="TypeScript Next.js React Prisma"
+          name="Delivery APP"
+          overview={locale.overview[2]}
+          img="imgs/delivery.jpg"
+          gif="imgs/delivery.gif"
+          deploy="https://delivery-app-plum.vercel.app/"
+          git="https://github.com/lostofan/DeliveryAPP"
+        />
+        <ProjectItem
           stack="Typescript React Redux SCSS HTML"
           name="Horror Clicker"
           overview={locale.overview[0]}
@@ -55,15 +64,7 @@ export const Projects: React.FC<ProjectsProps> = ({ isPage, locale }) => {
           deploy="https://serene-phoenix-afb553.netlify.app"
           git="https://github.com/lostofan/burgerapp"
         />
-        <ProjectItem
-          stack="React SCSS HTML"
-          name="Delivery shop"
-          overview={locale.overview[2]}
-          img="imgs/delivery.jpg"
-          gif="imgs/delivery.gif"
-          deploy="https://nimble-sopapillas-e354b5.netlify.app/"
-          git="https://github.com/lostofan/delivery-shop"
-        />
+
         {isPage ? (
           <ProjectItem
             stack="React NEXT.js TypeScript SCSS HTML"
