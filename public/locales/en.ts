@@ -13,7 +13,7 @@ export const en = {
     span: 'Frontend developer.',
     contact: 'Contact me',
     current: 'Currently working on ',
-    task: 'Dream job',
+    task: 'Fullstack app',
     resume: 'Resume',
     href: '/resume/en.pdf',
   },
